@@ -2,21 +2,21 @@
 
 // Functions will be listed below
 
-const froyoPro = prompt(
-  "Hi there! Welcome to Andys' Froyo Shop.\nEnter the flavors you'd like to order seperated by a comma.\nFlavors: Vanilla, Strawberry, Chocolate, etc.."
+const myFroyo = prompt(
+  "Hello, Welcome to Andy's Froyo Ice Cream Dessert.n\ Please enter your favorite Ice Cream flavor and we will get back to you.n\ Vanilla,Strawberry,Mint"
 );
 
-const froyoArray = froyoPro.split(",");
+const froyoFlav = myFroyo.split(",");
 
-const flavorsCount = {};
+const flavnum = {};
 
-froyoArray.forEach(function (flavor) {
+froyoFlav.forEach(function (flavor) {
   flavor = flavor.trim();
-  if (flavorsCount[flavor]++) {
+  if (flavnum[flavor]+= 1) {
   } else {
-    flavorsCount[flavor] = 1;
+     flavnum[flavor] = 1;
   }
 });
 
-console.log("Froyo Flavors & Count");
-console.log(flavorsCount);
+console.log("Froyo Flavors");
+console.log(flavnum);
