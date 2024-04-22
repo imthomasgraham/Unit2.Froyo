@@ -14,9 +14,11 @@ froyoFlav.forEach(function (flavor) {
   flavor = flavor.trim();
   if (flavnum[flavor]+= 1) {
   } else {
-     flavnum[flavor] = 1;
+     flavnum[flavor] = 1; 
   }
 });
 
 console.log("Froyo Flavors");
 console.log(flavnum);
+
+
